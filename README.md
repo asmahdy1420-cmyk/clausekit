@@ -73,7 +73,7 @@ src/clausekit/
 ## Quick start
 
 ```bash
-git clone https://github.com/asmahdy1420-cmyk/clausekit.git && cd clausekit
+git clone https://github.com/ahmedmahdy1420-cmd/clausekit.git && cd clausekit
 python3 -m venv .venv && source .venv/bin/activate
 pip install -e ".[api,dev]"
 ```
