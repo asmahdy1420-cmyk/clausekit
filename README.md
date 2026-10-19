@@ -1,5 +1,7 @@
 # clausekit
 
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white) ![Languages](https://img.shields.io/badge/Arabic_%7C_English-bilingual-0E7C66) ![NLP](https://img.shields.io/badge/NLP-clause_extraction-6F42C1) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 Bilingual Arabic/English contract clause extraction for Gulf legal documents.
 A Python library, a CLI and a FastAPI endpoint that turn contract text into
 structured JSON: numbered clauses, clause types, key entities and risk flags.
