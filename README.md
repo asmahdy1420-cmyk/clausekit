@@ -1,10 +1,20 @@
 # clausekit
 
-![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white) ![Languages](https://img.shields.io/badge/Arabic_%7C_English-bilingual-0E7C66) ![NLP](https://img.shields.io/badge/NLP-clause_extraction-6F42C1) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 Bilingual Arabic/English contract clause extraction for Gulf legal documents.
 A Python library, a CLI and a FastAPI endpoint that turn contract text into
 structured JSON: numbered clauses, clause types, key entities and risk flags.
+
+## Screenshots
+
+Both samples come from `examples/`, which are fictional contracts. The output is a short listing built from `clausekit.analyze()` (the script is a ten line loop over `result.clauses` and `result.risks`, not part of the repo). The preamble counts as the first of the ten clauses. The English supply agreement gets three risk flags, each with the matched wording as evidence.
+
+![English supply agreement split into clauses with three risk flags](docs/screenshots/english-contract.png)
+
+The Arabic service contract is split on `المادة` headings and typed the same way. It gets two flags, and the evidence is quoted in the original spelling.
+
+![Arabic service contract split into clauses with two risk flags](docs/screenshots/arabic-contract.png)
 
 ## Why
 
